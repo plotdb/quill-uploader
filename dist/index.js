@@ -182,6 +182,11 @@
       });
     }
   }, ref$);
+  if (typeof module != 'undefined' && module !== null) {
+    module.exports = quillUploader;
+  } else if (window) {
+    window.quillUploader = quillUploader;
+  }
   function import$(obj, src){
     var own = {}.hasOwnProperty;
     for (var key in src) if (own.call(src, key)) obj[key] = src[key];

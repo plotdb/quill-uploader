@@ -1,6 +1,6 @@
 {
   "name": "@plotdb/quill-uploader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Upload Manager for Quill.js. It's a abstract interface for which you should still implement the upload function to handle the upload request.",
   "main": "dist/index.min.js",
   "keywords": [],

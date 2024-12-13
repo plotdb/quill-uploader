@@ -104,3 +104,6 @@ quill-uploader.prototype = Object.create(Object.prototype) <<<
       @_quill.setContents nd, \silent
       (list) <~ @convert-images list .then _
       @upload-files list, @insert.bind(@)
+
+if module? => module.exports = quill-uploader
+else if window => window.quill-uploader = quill-uploader
